@@ -11,6 +11,11 @@
             height: 100vh;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
+        header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
         h1 {
           text-align: center;
           color: beige;
@@ -23,7 +28,12 @@
           justify-content: center;
           gap: 50px
         }
+        .itens-card {
+          display: flex;
+          flex-direction: column;
+        }
         .link {
+          text-align: center;
           background-color: beige;
           padding: 32px;
           border-radius: 10px;
@@ -31,22 +41,46 @@
           color: black;
           font-size: 1.5rem;
         }
+        .link-secondary {
+          text-align: center;
+          background-color: #ECA39D;
+          padding: 12px;
+          border-radius: 10px;
+          text-decoration: none;
+          color: black;
+          font-size: 1.5rem;
+        }
+        .link-home {
+          border-radius: 10px;
+          width: 400px;
+          text-align: center;
+          background-color: #ECA39D;
+          text-decoration: none;
+          color: black;
+          font-size: 1.5rem;
+          margin-bottom: 50px;
+        }
     </style>
 </head>
 <body>
-    <h1>Projetos Front-end</h1>
+    <header>
+      <h1>Projetos Front-end</h1>
+      <a class="link-home" href="https://gabrielsacht.github.io/Portifolio/" >Início</a>
+    </header>
+    
     <div class="itens">
-      <div class="intens-card">
+      <div class="itens-card">
         <a class="link" href="https://gabrielsacht.github.io/Portifolio/projetos/calculadora/calculadora.html" target="_blank">Calculadora</a>
       </div>
-      <div class="intens-card">
+      <div class="itens-card">
         <a class="link" href="https://gabrielsacht.github.io/Portifolio/projetos/landing_page/index.html" target="_blank">Landing Page</a>
       </div>
-      <div class="intens-card">
+      <div class="itens-card">
         <a class="link" href="https://gabrielsacht.github.io/Portifolio/projetos/blog_gatito_sass/index.html" target="_blank">Blog Gatito Petshop</a>
       </div>
-      <div class="intens-card">
+      <div class="itens-card">
         <a class="link" href="https://gabrielsacht.github.io/trybewallet/" target="_blank">Despesas Financeiras</a>
+        <a class="link-secondary" href="https://github.com/gabrielsacht/trybewallet" target="_blank">Repositório</a>
       </div>     
       
     </div>
